@@ -1,0 +1,35 @@
+.HeadContainer {
+    margin: 2% 10%;
+    border-bottom: 1px solid rgb(171, 148, 136);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Links {
+    padding: 4% 0;
+    width: 22%;
+}
+
+h1 {
+    color: rgba(235, 180, 169, 0.998)
+}
+
+
+.Links a {
+    text-decoration: none;
+    color: Black;
+    margin: 5%;
+    padding: 5%;
+}
+.btnNewBlog{
+    background-color: rgba(235, 180, 169, 0.998) ;
+    color: white !important;
+    border-radius: 7px;
+}
+
+@media screen and (min-width: 1300px) {
+    .Links {
+        width: 13%;
+      }
+  }

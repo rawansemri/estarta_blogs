@@ -1,0 +1,20 @@
+.BlogDetailsContainer {
+    text-align: center;
+    margin: 5% 20%;
+}
+
+#blogId {
+    display: none;
+}
+
+#btnDelete {
+    background-color: rgba(235, 180, 169, 0.998);
+    color: white;
+    width: 35%;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 5% 33%;
+    padding: 2%;
+}

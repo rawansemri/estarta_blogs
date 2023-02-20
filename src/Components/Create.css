@@ -1,0 +1,39 @@
+
+h2 {
+    text-align: center;
+    color: rgba(235, 180, 169, 0.998);
+}
+
+.addBlogInfo {
+    color: rgba(235, 180, 169, 0.998);
+}
+
+.AddBlog {
+    margin: 2% 40%;
+}
+
+#title,
+#body,
+#author {
+    width: 100%;
+    border-radius: 7px;
+    margin: 5% 0px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#body {
+    height: 70px;
+}
+
+#btnAdd {
+    background-color: rgba(235, 180, 169, 0.998);
+    color: white;
+    width: 35%;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 5% 33%;
+    padding: 2%;
+}

@@ -1,0 +1,16 @@
+.BlogsContainer{
+    margin: 5% 10%;
+}
+
+.BlogsContainer h3{
+    color:  rgba(235, 180, 169, 0.998) ;
+}
+.blog{
+    cursor: pointer;
+
+}
+
+#blog{
+    color: black;
+    text-decoration: none;
+}
