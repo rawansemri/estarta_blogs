@@ -1,16 +1,29 @@
-.BlogsContainer{
-    margin: 5% 10%;
+.BlogsContainer {
+    margin: 1% 10%;
 }
 
-.BlogsContainer h3{
-    color:  rgba(235, 180, 169, 0.998) ;
+.BlogsContainer h3 {
+    color: rgba(235, 180, 169, 0.998);
 }
-.blog{
+
+.blog {
     cursor: pointer;
-
+    background-color: rgb(236, 235, 235);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
 }
 
-#blog{
+#blog {
     color: black;
     text-decoration: none;
+}
+
+.search{
+    padding: 10px;
+margin: 0px 0px 0px 10px;
+}
+
+#btnEdit ,#cancel, #save{
+    margin: 0px 0px 0px 10px;
 }
