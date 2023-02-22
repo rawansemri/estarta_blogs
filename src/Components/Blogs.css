@@ -27,3 +27,9 @@ margin: 0px 0px 0px 10px;
 #btnEdit ,#cancel, #save{
     margin: 0px 0px 0px 10px;
 }
+.loading{
+    text-align: center;
+}
+.error{
+    text-align: center;
+}
