@@ -1,0 +1,27 @@
+.Sign_in {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.email,
+.pass,
+.btnSignin {
+    padding: 1%;
+    width: 25%;
+    margin: 1%;
+}
+.btnSignin {
+    background-color: rgba(235, 180, 169, 0.998);
+    color: white;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.signup:hover {
+    font-size: medium;
+}

@@ -19,17 +19,29 @@
     text-decoration: none;
 }
 
-.search{
+.search {
     padding: 10px;
-margin: 0px 0px 0px 10px;
-}
-
-#btnEdit ,#cancel, #save{
     margin: 0px 0px 0px 10px;
 }
-.loading{
+
+#btnEdit,
+#cancel,
+#save {
+    margin: 0px 0px 0px 10px;
+}
+
+.loading {
     text-align: center;
 }
-.error{
+
+.error {
     text-align: center;
 }
+
+a {
+    color: rgba(235, 180, 169, 0.998);
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+}
+

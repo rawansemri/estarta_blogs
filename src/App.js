@@ -5,6 +5,7 @@ import Create from './Components/Create';
 import { Routes, Route } from 'react-router-dom';
 import { BlogDetails } from './Components/BlogDetails';
 import { Error } from './Components/Error';
+import { Sign_in } from './Components/Sign_in';
 function App() {
   
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Blogs  />}></Route>
         <Route path='BlogDetails/:id' element={<BlogDetails  />}></Route>
         <Route path='*' element={<Error />} />
+        <Route path='Sign_in' element={<Sign_in  />}></Route>
       </Routes>
     </div>
   );
