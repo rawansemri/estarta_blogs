@@ -19,12 +19,12 @@ function BlogDetails () {
   return (
     isloaded ? 'Loading...' :
       <div className='BlogDetailsContainer' key={blog.id}>
-        {/* <Helmet>
+        <Helmet>
           <meta charSet='utf-8' />
           <title>Blog Details</title>
-        </Helmet> */}
+        </Helmet> 
         <h2>{blog.title}</h2>
-        <div>{blog.author}</div>
+        <div>{blog.author}</div><br></br>
         <div>{blog.text}</div>
         <button id='btnDelete' onClick={HandleDelete}>Delete</button>
       </div>

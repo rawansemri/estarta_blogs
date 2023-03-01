@@ -5,6 +5,7 @@ import './Blogs.css';
 import useFetch from '../CustomHook/useFetch'
 import { Helmet } from 'react-helmet';
 const Blog = lazy(() => import('./Blog'));
+const Frame = lazy(() => import('./Frame'));
 
 function Blogs() {
 
@@ -24,13 +25,16 @@ function Blogs() {
                         <title>Blogs</title>
                     </Helmet>
                 </div>
+
                 <input className='search' type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value.toLowerCase())} />
+                {/* <button>DarkMode</button> */}
+                <Frame>
                 {
                     data?.filter((blogs) => blogs.author.toLowerCase().includes(search))
                         ?.map((blog) => (<Blog key={blog?.id} blog={blog} />))
 
 
-                }
+                }</Frame>
             </Suspense>
         </div>)
 };
