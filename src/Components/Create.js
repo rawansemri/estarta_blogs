@@ -2,7 +2,7 @@ import React from 'react'
 import './Create.css';
 import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
-
+import {Helmet} from 'react-helmet';
 export const Create = () => {
 
   const navigate = useNavigate();
@@ -15,25 +15,30 @@ export const Create = () => {
     }
   );
 
-console.log(myRef);
+  console.log(myRef);
   const handleChange = (e) => {
-    myRef.current = {...myRef.current, [e.target.name]: e.target.value }}
-  
+    myRef.current = { ...myRef.current, [e.target.name]: e.target.value }
+  }
+
 
   function AddInfo(e) {
     e.preventDefault();
-console.log(myRef);
-  fetch('http://localhost:8000/blogs', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(myRef.current)
-   })
-      
-        navigate('/');
-    }
+    console.log(myRef);
+    fetch('http://localhost:8000/blogs', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(myRef.current)
+    })
+
+    navigate('/');
+  }
 
   return (
     <div className='Create'>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Create Blog</title>
+      </Helmet>
       <form onSubmit={AddInfo}>
         <div className='AddBlog'>
 
