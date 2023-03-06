@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, memo } from 'react'
 import './Blogs.css';
 import { Link } from 'react-router-dom'
 function Blog({ blog }) {
@@ -42,4 +42,4 @@ function Blog({ blog }) {
     )
 }
 
-export default Blog;
+export default memo(Blog);
